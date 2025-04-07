@@ -6,14 +6,14 @@
 
 "use strict"
 
-function calculateVolumeOfSphere () {
+function calculateCelcius() {
   // input
-  const radius = parseFloat(document.getElementById('radius').value);
+  const fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
 
   // process
-  const volumeOfSphere = 4/3 * Math.PI * (radius * radius * radius);
+  const celcius = (fahrenheit - 32) * 5/9 
 
   // output
-  document.getElementById('volume').innerHTML = 'Volume is: ' + volumeOfSphere + ' mm³'
+  document.getElementById('temperature').innerHTML = 'Celcius is: ' + celcius + '°'
 }
 

@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-  <title>Volume Of a Sphere with JS</title>
+  <title>Fahrenheit to celcius with JS</title>
 </head>
 
 <body>
@@ -23,38 +23,36 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Volume Of a Sphere with JS</span>
+        <span class="mdl-layout-title">Fahrenheit to celcius with JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/volume-of-sphere.png" alt="Volume Of Sphere" />
+        <img src="./images/temperature.png" alt="temperature" />
       </div>
-      <div class="page-content">Sphere</div>
+      <div class="page-content">Temperature</div>
       <br />
-      <p> solve for volume </p>
-      <br />
-      <div class="page-content">V=4/3πr³</div>
+      <div class="page-content">Formula: (32°F - 32) x 5/9 = 0°C</div>
       <form>
         <br />
         <!-- Numeric Textfield -->
-        <p>Radius</p>
+        <p>Fahrenheit</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="radius" />
-          <label class="mdl-textfield__label" for="radius">enter value</label>
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="fahrenheit" />
+          <label class="mdl-textfield__label" for="fahrenheit">enter value</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateVolumeOfSphere()" type="button">
+          onclick="calculateCelcius()" type="button">
           Calculate
         </button>
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="volume"></div>
+        <div id="temperature"></div>
       </div>
     </main>
   </div>
