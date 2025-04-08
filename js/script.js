@@ -14,6 +14,6 @@ function calculateCelcius() {
   const celcius = (fahrenheit - 32) * 5/9 
 
   // output
-  document.getElementById('temperature').innerHTML = 'Celcius is: ' + celcius + '°'
+  document.getElementById('temperature').innerHTML = 'The temperature in clecius is: ' + celcius + '°'
 }
 
